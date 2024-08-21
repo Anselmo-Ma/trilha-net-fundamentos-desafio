@@ -22,38 +22,48 @@ bool exibirMenu = true;
 // Realiza o loop do menu
 while (exibirMenu)
 {
-    Console.Clear();
-    Console.WriteLine("Digite a sua opção:");
-    Console.WriteLine("1 - Cadastrar veículo");
-    Console.WriteLine("2 - Remover veículo");
-    Console.WriteLine("3 - Listar veículos");
-    Console.WriteLine("4 - Encerrar");
+	Console.Clear();
+	Console.WriteLine("Digite a sua opção:");
+	Console.WriteLine("1 - Cadastrar veículo");
+	Console.WriteLine("2 - Remover veículo");
+	Console.WriteLine("3 - Listar veículos");
+	Console.WriteLine("4 - Alterar tabela de valores");
+	Console.WriteLine("5 - Verificar tabela de preço");
+	Console.WriteLine("6 - Encerrar");
 
-    switch (Console.ReadLine())
-    {
-        case "1":
-            es.AdicionarVeiculo();
-            break;
+	switch (Console.ReadLine())
+	{
+		case "1":
+			es.AdicionarVeiculo();
+			break;
 
-        case "2":
-            es.RemoverVeiculo();
-            break;
+		case "2":
+			es.RemoverVeiculo();
+			break;
 
-        case "3":
-            es.ListarVeiculos();
-            break;
+		case "3":
+			es.ListarVeiculos();
+			break;
 
-        case "4":
-            exibirMenu = false;
-            break;
+		case "4":
+			es.AlterarPreco();
+			break;
 
-        default:
-            Console.WriteLine("Opção inválida");
-            break;
-    }
+		case "5":
+			Console.WriteLine($"Entrada = R$ {precoInicial} | Valor / Hora = R$ {precoPorHora}");
+			break;
 
-    Console.WriteLine("Pressione uma tecla para continuar");
-    Console.ReadLine();
+		case "6":
+			exibirMenu = false;
+			break;
+
+		default:
+			Console.WriteLine("Opção inválida");
+			break;
+	}
+
+	Console.WriteLine("Pressione uma tecla para continuar");
+	Console.ReadLine();
 }
 
 Console.WriteLine("O programa se encerrou");
