@@ -36,12 +36,12 @@ A classe contém quatro métodos, sendo:
 **ListarVeiculos**: Lista todos os veículos presentes atualmente no estacionamento. Caso não haja nenhum, exibir a mensagem "Não há veículos estacionados".
 
 Por último, há um menu interativo com as seguintes ações implementadas:
-1 - Cadastrar veículo
-2 - Remover veículo
-3 - Listar veículos
-4 - Alterar tabela de valores
-5 - Verificar tabela de preço
-6 - Encerrar
+- 1 - Cadastrar veículo
+- 2 - Remover veículo
+- 3 - Listar veículos
+- 4 - Alterar tabela de valores
+- 5 - Verificar tabela de preço
+- 6 - Encerrar
 
 <!--
 ## Solução
